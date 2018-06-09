@@ -1,14 +1,16 @@
 
 var crawler = require("./crawler");
 var googleAPI = require("./googleAPI");
+var googleNews = require("./googleNews");
 
 var domain = "";
 domain = getDomain(); // validate and process the email to retrieve the domain
 
 //------------------------------
 
-googleAPI(domain);
 crawler(domain);
+googleAPI(domain);
+googleNews(domain);
 
 //------------------------------
 
