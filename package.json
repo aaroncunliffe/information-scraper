@@ -1,0 +1,19 @@
+{
+  "name": "informationscraper",
+  "version": "1.0.0",
+  "description": "A NodeJS scraper that scrapes websites for various useful information",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aaron Cunliffe",
+  "license": "ISC",
+  "dependencies": {
+    "@google/maps": "^0.4.6",
+    "cheerio": "^1.0.0-rc.2",
+    "knwl.js": "^1.0.2",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {}
+}
