@@ -15,5 +15,13 @@
     "request": "^2.87.0",
     "request-promise": "^4.2.2"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aaroncunliffe/InformationScraper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aaroncunliffe/InformationScraper/issues"
+  },
+  "homepage": "https://github.com/Aaroncunliffe/InformationScraper#readme"
 }

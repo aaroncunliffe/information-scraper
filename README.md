@@ -1,5 +1,4 @@
 # InformationScraper
----
 
 Given an email address, this program takes the domain portion and attempts to crawl the site, page by page, looking for other email addresses and phone numbers. It also performs a Places lookup using the Google API to attempt to gather various information if the domain is associated with a business, e.g. business address, opening hours etc.
 
@@ -9,9 +8,9 @@ In order to make calls to the Google API, keys_blank.js needs to be renamed to k
 
 ---
 
-## To run
+## To setup:
 ```
-git clone {link}
+git clone https://github.com/Aaroncunliffe/InformationScraper.git
 cd InformationScraper
 npm install
 ```
@@ -20,16 +19,16 @@ npm install
 node main.js aaron@example.com
 ```
 
-## Dependencies
-[cheerio](https://github.com/cheeriojs/cheerio)
-[knwl.js](https://github.com/benhmoore/Knwl.js) 
-[request](https://github.com/request/request) 
-[request-promise](https://github.com/request/request-promise) 
-[google-maps-services](https://github.com/googlemaps/google-maps-services-js)
+## Dependencies:
+* [cheerio](https://github.com/cheeriojs/cheerio)
+* [knwl.js](https://github.com/benhmoore/Knwl.js) 
+* [request](https://github.com/request/request) 
+* [request-promise](https://github.com/request/request-promise) 
+* [google-maps-services](https://github.com/googlemaps/google-maps-services-js)
 
-## Learning outcomes
+## Learning outcomes:
 1. NodeJS use.
 2. Google maps API use.
-3. Dealing with asynchronous Javascript - by using promises.
+3. Dealing with asynchronous Javascript - used promises.
 
 The screenshots folder contains example output of both the CLI and .txt files produced.
