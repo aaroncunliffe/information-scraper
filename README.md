@@ -3,7 +3,7 @@
 Given an email address, this program takes the domain portion and runs 4 operations using that data:
 
 ### 1. Website cralwer:  
-Attempts to crawl the site page by page, looking for other email addresses and phone numbers.
+Attempts to crawl the domain page by page, looking for other email addresses and phone numbers.
 
 ### 2. Google Places API:   
 performs a Places lookup using the Google API to attempt to gather various information if the domain is associated with a business, e.g. business address, opening hours etc.
@@ -32,7 +32,7 @@ git clone https://github.com/Aaroncunliffe/InformationScraper.git
 cd InformationScraper
 npm install
 ```
-
+Prepare keys.js before running below command.
 ```
 node main.js aaron@example.com
 ```
