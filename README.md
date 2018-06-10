@@ -43,6 +43,7 @@ node main.js aaron@example.com
 * [request](https://github.com/request/request) 
 * [request-promise](https://github.com/request/request-promise) 
 * [google-maps-services](https://github.com/googlemaps/google-maps-services-js)
+* [AaronCunliffe/my-google-news](https://github.com/Aaroncunliffe/my-google-news) - My own fork with some fixes / additions
 
 ## Learning outcomes:
 1. NodeJS use.
