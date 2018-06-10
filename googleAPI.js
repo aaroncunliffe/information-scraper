@@ -7,6 +7,14 @@ const googleMapsClient = require("@google/maps").createClient({
   Promise: Promise
 });
 
+/* 
+  Summary:
+  Uses google places API, to gather information about a compnay publically available on google.
+
+  Limitations: if some companies are known by their products (e.g. couchbase), it will not show up as a business on google places, and the search wil fail
+
+*/
+
 //------------------------------
 
 module.exports = main;

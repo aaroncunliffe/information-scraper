@@ -8,6 +8,14 @@ const googleMapsClient = require("@google/maps").createClient({
   Promise: Promise
 });
 
+/* 
+  Summary:
+  Uses google places API to find a companies postal town, uses this and the company domain name to hopefully narrow down the search
+  to relavent articles only from that company, in that city.
+
+  Limitations: Can sometimes retrieve completely irrelevant articles, this will need human verification to identify their relavence.
+
+*/
 
 //------------------------------
 
@@ -33,6 +41,7 @@ function main(domain) {
     .then(function (response) {
       
       if (response.json.results[0] == undefined) {
+        console.log("----googleNews.js----");
         console.log("Error - no google place found for that email address");
         console.log("");
       }
@@ -59,7 +68,7 @@ function main(domain) {
               console.log("Query URL: " + res.url);
               console.log("too much information to print to console. See associated google-news.txt")
               console.log("");
-              
+
               var base = "./information/";
               var dir = "./information/" + domain;
 
@@ -90,8 +99,6 @@ function main(domain) {
 
                 stream.end(); // Close file
               });
-
-
 
             });
 

@@ -15,6 +15,18 @@ var finalPhones = [];
 
 var promises = [];
 
+/* 
+  Summary:
+  Given a domain portion from an email, goes to that website and retrieves all internal page links on the first page
+  (links that start with '/' OR contain the domain name). and then crawls each of these pages individually for any relavent information.
+  This is inefficient, but, with no default contact-us page for every site, this strategy is more likely to find relavent information.
+  Duplicates are removed then logged to console / text file.
+
+  Limitations: 
+  - Websites can have anti-scraper measures in place, using a headless browser library like phantomJS or selenium might have more luck
+  I just allow the pages to throw an erro that is caught and execution continues.
+  - Innefficient
+*/
 
 //------------------------------
 
